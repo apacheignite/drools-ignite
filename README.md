@@ -1,6 +1,5 @@
 # Apache Ignite Jbpm-Drools Module 
-
-ent. So you can replace default Vert.x cluster manager by this implementation.
+TODO ... 
 
 ## How to use
 
