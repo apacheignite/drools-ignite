@@ -16,8 +16,16 @@ package org.drools.persistence.ignite.processinstance;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class IgniteProcessInstanceManagerFactory {
 
+import org.drools.core.common.InternalKnowledgeRuntime;
+import org.jbpm.process.instance.event.SignalManager;
+import org.jbpm.process.instance.event.SignalManagerFactory;
 
-
+/**
+ * This is the custom factorty of the signal manager
+ */
+public class IgniteProcessInstanceManagerFactory implements SignalManagerFactory {
+    public SignalManager createSignalManager(InternalKnowledgeRuntime kruntime) {
+        return new IgniteSignalManager(kruntime);
+    }
 }
