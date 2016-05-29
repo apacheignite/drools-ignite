@@ -1,5 +1,9 @@
 package org.drools.persistence.ignite.processinstance;
 
+import org.drools.core.common.InternalKnowledgeRuntime;
+import org.jbpm.process.instance.event.SignalManager;
+import org.jbpm.process.instance.event.SignalManagerFactory;
+
 /**
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -16,5 +20,9 @@ package org.drools.persistence.ignite.processinstance;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class IgniteSignalManagerFactory {
+
+public class IgniteSignalManagerFactory  implements SignalManagerFactory{
+    public SignalManager createSignalManager(InternalKnowledgeRuntime kruntime) {
+        return new IgniteSignalManager(kruntime);
+    }
 }
