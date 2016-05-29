@@ -17,4 +17,7 @@ package org.drools.persistence.ignite.processinstance;
  * limitations under the License.
  */
 public class IgniteProcessInstanceManagerFactory {
+
+
+
 }

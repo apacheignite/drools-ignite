@@ -16,7 +16,13 @@ package org.drools.persistence.ignite.processinstance;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/**
+ * Define the class to manage the instance
+ */
 public class IgniteProcessInstanceManager {
+
+
 
 
 

@@ -16,5 +16,11 @@ package org.drools.persistence.ignite.processinstance;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/**
+ * Defines the a signal class manager for Ignite
+ */
 public class IgniteSignalManager {
+
+
 }
