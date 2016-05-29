@@ -1,5 +1,9 @@
 package org.drools.persistence.ignite.processinstance;
 
+import org.drools.core.common.InternalKnowledgeRuntime;
+import org.jbpm.process.instance.ProcessInstanceManager;
+import org.jbpm.process.instance.ProcessInstanceManagerFactory;
+
 /**
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -17,5 +21,10 @@ package org.drools.persistence.ignite.processinstance;
  * limitations under the License.
  */
 
-public class IgniteProcessInstanceManagerFactory  {
+public class IgniteProcessInstanceManagerFactory implements ProcessInstanceManagerFactory {
+    public ProcessInstanceManager createProcessInstanceManager(InternalKnowledgeRuntime kruntime) {
+        IgniteProcessInstanceManager result = new IgniteProcessInstanceManager();
+        result.setKnowledgeRuntime(kruntime);
+        return result;
+    }
 }
