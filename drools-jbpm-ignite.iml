@@ -10,8 +10,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.apache.ignite:ignite-core:1.5.1.final-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.ignite:ignite-spring:1.5.1.final-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-core:6.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.mvel:mvel2:2.2.6.Final" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-api:6.3.0.Final" level="project" />
@@ -34,5 +32,8 @@
     <orderEntry type="library" name="Maven: org.jbpm:jbpm-persistence-jpa:6.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jbpm:jbpm-flow:6.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ignite:ignite-core:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.cache:cache-api:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.gridgain:ignite-shmem:1.0.0" level="project" />
   </component>
 </module>
